@@ -3,6 +3,7 @@ h1,h2,h3, p{
     font-family: 'Space Grotesk', sans-serif;
     font-style: normal;
 }
+
 nav{
   display: flex;
     justify-content: space-between;
@@ -115,6 +116,10 @@ button{
     margin-left: auto;
     margin-right: auto;
     gap:1em;
+    a {
+        text-decoration: none;
+        color: yellow;
+    }
     div{
         grid-column: span 2;
         position: relative;
@@ -156,6 +161,7 @@ button{
             color:black;
             border-bottom: #4EE1A0 3px solid;
             font-size: x-large;
+            
         }
     }
     }

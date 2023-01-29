@@ -13,8 +13,9 @@
       <h1>I'm <u>Derrick Kyereh</u></h1>
       <br />
       <p>
-        Based in the US, I’m a front-end developer passionate about building
-        accessible web apps that users love.
+        As a front-end developer based in the United States, I am dedicated to
+        creating accessible and user-centric web applications that deliver
+        exceptional experiences.
       </p>
       <button>Contact Me</button>
     </section>
@@ -69,34 +70,49 @@
       <img [src]="blockChain" alt="" />
       <h1>Sending Files between organizations with blockchain</h1>
       <p>ReactJs, Node, HTML, Typescript, Tailwind, Mongodb, AWS</p>
-      <p class="img-description">View Code</p>
+      <p class="img-description">
+        <a
+          href="https://github.com/maxwellfortney/VCU-Capstone-Blockchain/tree/main/code/next-web-app"
+          >View Code</a
+        >
+      </p>
     </div>
     <div>
       <img [src]="linux" alt="" />
-      <h1>
-        Created my own small shell, that listen to certain inputs from the user
-        and responds
-      </h1>
+      <h1>Developed a custom shell utilizing the C programming language.</h1>
       <p>Language used was C</p>
-      <p class="img-description">View Code</p>
+      <p class="img-description">
+        <a href="https://github.com/kyerehdi/Shell.git">View Code</a>
+      </p>
     </div>
     <div>
       <img [src]="database" alt="" />
       <h1>Created a Club League Soccer database</h1>
       <p>Angular, Typescript, HTML, CSS, PHP, MySQL</p>
-      <p class="img-description1">View Code</p>
+      <p class="img-description1">
+        <a
+          href="https://github.com/cmsc-vcu/202310-cmsc508-semester-project-cmsc508-202310-team-17/tree/main/Phase2"
+          >View Code</a
+        >
+      </p>
     </div>
     <div>
       <img [src]="race" alt="" />
       <h1>2d Car racing game using threads</h1>
       <p>Language used was java</p>
-      <p class="img-description">View Code</p>
+      <p class="img-description">
+        <a href="https://github.com/kyerehdi/Java-Car-Racing-game.git"
+          >View Code</a
+        >
+      </p>
     </div>
     <div>
       <img [src]="vicWeb" alt="" />
       <h1>Photography Website</h1>
       <p>Angular, Typescript, HTML, SCSS,</p>
-      <p class="img-description1">View Code</p>
+      <p class="img-description1">
+        <a href="https://github.com/kyerehdi/port-app.git">View Code</a>
+      </p>
     </div>
   </section>
   <br /><br />
@@ -110,13 +126,32 @@
       </p>
     </div>
     <div class="input">
-      <input type="text" placeholder="Name" />
-      <br />
-      <input type="text" placeholder="Email" />
-      <br /><br /><br />
-      <textarea name="" id="" placeholder="Message"></textarea>
       <br /><br />
-      <button>Send Message</button>
+      <form [formGroup]="email_form" (submit)="sendEmail($event)">
+        <input
+          type="text"
+          placeholder="Name"
+          formControlName="from_name"
+          name="from_name"
+        />
+        <br />
+        <input
+          type="text"
+          placeholder="Email"
+          formControlName="email_id"
+          name="email_id"
+        />
+        <br /><br /><br />
+        <textarea
+          name=""
+          id=""
+          placeholder="Message"
+          formControlName="message"
+          name="message"
+        ></textarea>
+        <br /><br />
+        <button type="submit">Send Message</button>
+      </form>
     </div>
   </section>
   <section class="bot">
