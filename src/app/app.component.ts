@@ -11,13 +11,14 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 export class AppComponent implements OnInit {
   title = 'port-app';
   picOfMe = '../assets/mePic1.png';
-  blockChain = '../assets/block.jpg';
+  blockChain = '../assets/blockchain.png';
   linux ='../assets/linux.png';
   database='../assets/database-soccer.PNG';
   race = '../assets/race.PNG';
-  vicWeb = '../assets/vic-web-port.PNG';
+  vicWeb = '../assets/vic-web.png';
   linkden = '../assets/link.png';
   github = '../assets/G.png';
+  malwareScanner = '../assets/malware_scanner.png'
   email_form!: FormGroup;
 
   constructor(private fb: FormBuilder) {}
