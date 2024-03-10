@@ -18,7 +18,9 @@ export class AppComponent implements OnInit {
   vicWeb = '../assets/vic-web.png';
   linkden = '../assets/link.png';
   github = '../assets/G.png';
-  malwareScanner = '../assets/malware_scanner.png'
+  malwareScanner = '../assets/malware_scanner.png';
+  financePage= '../assets/finance-app-ss.PNG';
+  fitnessApp ='../assets/collage.png'
   email_form!: FormGroup;
 
   constructor(private fb: FormBuilder) {}
@@ -59,4 +61,6 @@ export class AppComponent implements OnInit {
     this.ngOnInit();
   }
 
+
+  
 }
